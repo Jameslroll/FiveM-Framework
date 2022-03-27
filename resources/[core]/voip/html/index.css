@@ -1,0 +1,97 @@
+body {
+	background-color: transparent;
+	overflow: hidden;
+	user-select: none;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+	display: block;
+	position: absolute;
+
+	right: 3vmin;
+	top: 4vmin;
+
+	width: 4vmin;
+	height: 4vmin;
+}
+
+#error {
+	position: absolute;
+	display: none;
+
+	right: 3vmin;
+	top: 9vmin;
+
+	font-size: 2vmin;
+	font-weight: 800;
+	color: red;
+}
+
+#voice-range {
+	position: absolute;
+	display: block;
+
+	opacity: 0.4;
+
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+#voice-range.active {
+	opacity: 1.0;
+	animation: pulsing 1s infinite alternate ease-in-out;
+}
+
+#channels {
+	display: flex;
+	flex-direction: row-reverse;
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	width: 50vmin;
+	margin-right: 1vmin;
+
+	transform: translate(0%, -50%);
+}
+
+#channels span {
+	font-weight: 800;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(to bottom, rgba(207, 231, 253, 0.8), rgba(42, 146, 242, 0.8));
+	box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 1vmin;
+	padding: 0.5vmin;
+	margin-left: 0.5vmin;
+}
+
+#debug {
+	display: block;
+	position: absolute;
+
+	width: 20vmin;
+	right: 3vmin;;
+	top: 12vmin;
+
+	text-align: left;
+	font-size: 1em;
+
+	color: rgb(0, 255, 0);
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+#debug h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@keyframes pulsing {
+	0% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}

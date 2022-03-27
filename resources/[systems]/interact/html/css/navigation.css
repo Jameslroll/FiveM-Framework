@@ -1,0 +1,86 @@
+#navigation {
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+
+	overflow: visible;
+	z-index: 100;
+	user-select: none;
+}
+
+#navigation .container {
+	position: absolute;
+	
+	width: 0px;
+	height: 0px;
+
+	overflow: visible;
+}
+
+#navigation .option {
+	display: flex;
+	position: absolute;
+	width: auto;
+	height: auto;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	width: 12vmin;
+	height: 12vmin;
+	
+	background: radial-gradient(closest-side, rgba(0, 0, 0, 0.6) 25%, transparent);
+	color: white;
+	border-radius: 100%;
+
+	transform: translate(-50%, -50%);
+
+	animation: scale-in 500ms;
+}
+
+#navigation .option.active {
+	background: radial-gradient(closest-side, var(--secondary-color) 25%, transparent);
+}
+
+#navigation .option > span {
+	position: relative;
+
+	width: auto;
+	height: auto;
+	
+	text-align: center;
+	font-size: 1.5vmin;
+}
+
+#navigation .option > i {
+	position: relative;
+
+	width: auto;
+	height: auto;
+	margin: 0.5vmin;
+	
+	text-align: center;
+	font-size: 3vmin;
+}
+
+#navigation #close-navigation {
+	background: radial-gradient(closest-side, rgba(0, 0, 0, 0.6) 25%, transparent);
+}
+
+#navigation #close-navigation:hover {
+	background: radial-gradient(closest-side, rgba(255, 0, 0, 0.8) 25%, transparent);
+}
+
+@keyframes scale-in {
+	0% {
+		transform: translate(-50%, -50%) scale(0.0);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1.0);
+	}
+}

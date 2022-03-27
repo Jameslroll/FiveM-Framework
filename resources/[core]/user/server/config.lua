@@ -1,0 +1,41 @@
+Server = {
+	MaxTries = 16,
+	EnableWhitelist = true,
+	Emoji = { "💥", "💫", "💦", "💨", "🐒", "🦍", "🦧", "🐺", "🦊", "🦝", "🐱", "🦄", "🦓", "🐮", "🐷", "🐗", "🐏", "🐑", "🐐", "🐪", "🐫", "🦙", "🦒", "🐘", "🦏", "🦛", "🐭", "🐹", "🐰", "🐇", "🐿️", "🦔", "🦇", "🐻", "🐨", "🐼", "🦥", "🦦", "🦨", "🦘", "🦡", "🐾", "🦃", "🐔", "🐓", "🐤", "🐦", "🐧", "🕊️", "🦅", "🦆", "🦢", "🦉", "🦩", "🦚", "🦜", "🐸", "🐊", "🐢", "🦎", "🐍", "🐲", "🐉", "🦕", "🦖", "🐳", "🐋", "🐬", "🐟", "🐠", "🐡", "🦈", "🐙", "🐚", "🐌", "🦋", "🐛", "🐜", "🐝", "🐞", "🦗", "🕷️", "🦂", "🦟", "💐", "🌸", "💮", "🏵️", "🌹", "🥀", "🌺", "🌻", "🌼", "🌷", "🌱", "🌲", "🌳", "🌴", "🌵", "🌾", "🌿", "☘️", "🍀", "🍁", "🍂", "🍃", "🍄", "🌰", "🦀", "🦞", "🦐", "🦑", "🌈" },
+	Kicked = {
+		Default = "You were kicked.",
+		Reason = " (%s)",
+	},
+	Deferrals = {
+		Banned = "🔨 You are banned. 🔨\n\nReason: %s.\n\n%s hours and %s minutes remaining.",
+		BannedForever = "⚒️ You are permanently banned. ⚒️\n\nReason: %s.\n\nAppeal on our website.",
+		Blocked = "Too many retries.\n\nPlease wait before trying to connect.",
+		InvalidName = "Your Steam name cannot contain special characters.",
+		Timeout = "Timed out.",
+		UserFailed = "User creation failed. Please contact the server owner.",
+		Whitelist = "You must be a member of our community in order to join.\n\nYou may apply on our website.",
+		Licenses = {
+			["discord"] = "Discord must be running.",
+			["license"] = "License rejected.\n\nDo you have a valid Rockstar account?",
+			["name"] = "Steam name not found.",
+			["steam"] = "Steam must be running.\n\nCheck if Steam's API is down, if it is, you'll have to wait until it comes back up. (https://downdetector.com/status/steam/)",
+		},
+	},
+	Identifiers = {
+		"discord",
+		"endpoint",
+		"license",
+		"license2",
+		"live",
+		"name",
+		"steam",
+		"xbl",
+	},
+	Fields = {
+		"first_joined",
+		"id",
+		"last_played",
+		"priority",
+		"flags",
+	},
+}

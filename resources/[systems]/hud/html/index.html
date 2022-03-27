@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="index.css">
+		<script src="vendor/gauge.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="minimap">
+				<div id="shadow"></div>
+				<div class="fade">
+					<div id="spinner">
+						<img src="images/compass.png">
+					</div>
+				</div>
+				<div id="vehicle">
+					<svg
+						class="fuel-outer"
+						width="30%"
+						height="30%"
+					>
+						<circle
+							id="fuel-background"
+							class="circle"
+							r="50%"
+							cx="50%"
+							cy="50%"
+						/>
+						<circle
+							id="fuel-bar"
+							class="circle"
+							r="50%"
+							cx="50%"
+							cy="50%"
+						/>
+					</svg>
+					<div class="speed">
+						<span style="font-size: 100%" id="speed">0</span>
+						<span style="font-size: 50%">MPH</span>
+					</div>
+					<div id="air" style="display: none">
+						<span style="font-size: 100%" id="altitude"></span>
+						<span style="font-size: 50%">FT</span>
+					</div>
+				</div>
+			</div>
+			<span id="location"></span>
+		</div>
+	</body>
+</html>

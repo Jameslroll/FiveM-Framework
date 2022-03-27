@@ -1,0 +1,11 @@
+-- Citizen.CreateThread(function()
+-- 	local npc = Npcs:Register({
+-- 		id = "TEST_NPC",
+-- 		coords = vector4(328.5318603515625, -200.65306091308597, 54.2264404296875, 162.4396514892578),
+-- 		appearance = json.decode('{"components":[1,1,1,1,1,1,1,1,1,166,5,1,1,1,1,1,1,1,1,1,5,1],"hair":[16,16,16],"props":[1,1,1,1,1,1,1,1],"makeupOverlays":[1,1,2,0.0,0.0,0.0,44,44,44,13,13,13]}'),
+-- 		features = json.decode('{"otherOverlays":[12,4,8,7,14,3,0.01517224274121,0.00797694504713,0.06239264705236,0.00288458028782,0.49220037460327,0.17243146896362,0.89045655727386],"blendData":[26,31,9,16,28,22,0.68,0.79,0.84],"model":1,"overlays":[],"faceFeatures":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"bodyType":1,"hairOverlays":[24,16,8,0.36515391070327,0.73113065707567,1,6,6,6],"eyeColor":2}'),
+-- 		animations = {
+-- 			idle = { Dict = "anim@amb@nightclub@peds@", Name = "rcmme_amanda1_stand_loop_cop", Flag = 49 },
+-- 		},
+-- 	})
+-- end)

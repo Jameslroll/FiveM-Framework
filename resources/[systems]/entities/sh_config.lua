@@ -1,0 +1,3 @@
+Config = {
+	GridSize = 2,
+}

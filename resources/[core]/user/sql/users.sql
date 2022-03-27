@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS `users` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf32_general_ci',
+	`steam` CHAR(15) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`license` CHAR(40) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`license2` CHAR(40) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`discord` CHAR(18) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`endpoint` CHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`xbl` CHAR(16) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`live` CHAR(15) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`tokens` LONGTEXT NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+	`first_joined` DATETIME NULL DEFAULT NULL,
+	`last_played` DATETIME NULL DEFAULT NULL,
+	`flags` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0',
+	`priority` TINYINT(3) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `idusers_UNIQUE` (`id`) USING BTREE,
+	UNIQUE INDEX `steam_UNIQUE` (`steam`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

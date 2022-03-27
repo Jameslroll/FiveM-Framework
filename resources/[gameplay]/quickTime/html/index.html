@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="vendor/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="index.css">
+		<script src="vendor/jquery.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body style="display: none">
+		<svg
+			class="progress"
+			width="200"
+			height="200"
+		>
+			<circle
+				id="progressGoal"
+				class="circle"
+				stroke="rgba(220, 0, 0, 0.8)"
+				stroke-width="20"
+				fill="transparent"
+				r="80"
+				cx="100"
+				cy="100"
+			/>
+			<circle
+				id="progressCursor"
+				class="circle"
+				stroke="rgba(0, 220, 0, 0.8)"
+				stroke-width="20"
+				fill="transparent"
+				r="80"
+				cx="100"
+				cy="100"
+			/>
+			<circle
+				id="progressOuter"
+				class="circle smooth"
+				stroke="rgba(0, 220, 0, 0.8)"
+				stroke-width="10"
+				fill="transparent"
+				r="100"
+				cx="100"
+				cy="100"
+			/>
+		</svg>
+	</body>
+</html>

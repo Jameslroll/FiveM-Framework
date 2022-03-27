@@ -1,0 +1,83 @@
+body {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+
+	font-family: "Roboto";
+}
+
+#title {
+	position: absolute;
+	display: block;
+	right: 1.0vmin;
+	top: 0.5vmin;
+	font-size: 3vmin;
+	font-weight: 800;
+	color: rgba(255, 255, 255, 0.2);
+
+	mask-image: linear-gradient(to bottom, white, transparent 150%);
+	mask-size: 100% 100%;
+	mask-repeat: no-repeat;
+	mask-position: left top, left bottom;
+
+	animation: title-anim 4s ease infinite;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("assets/background.jpg");
+	background-size: 100% 100%;
+	filter: blur(0.5vmin);
+	transform: scale(1.1);
+}
+
+.portraits {
+	position: absolute;
+
+	width: auto;
+	height: auto;
+
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.portrait {
+	position: absolute;
+	display: block;
+
+	width: auto;
+	height: 50vmin;
+
+	object-fit: contain;
+
+	bottom: 0px;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, transparent 80%, rgba(255, 198, 93, 0.2));
+	z-index: 1000;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Regular.woff");
+}
+
+@keyframes overlay-anim {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}

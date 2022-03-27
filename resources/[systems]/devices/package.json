@@ -1,0 +1,28 @@
+{
+  "name": "devices",
+  "version": "0.0.1",
+  "description": "A device framework",
+  "productName": "Devices",
+  "author": "James Roll <Jameslroll@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.11.1",
+    "core-js": "^3.18.1",
+    "quasar": "^2.1.0",
+    "vue3-runtime-template": "^1.0.2",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.1.0"
+  },
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

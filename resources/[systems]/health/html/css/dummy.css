@@ -1,0 +1,29 @@
+.dummy {
+	position: absolute;
+	width: 35vmin;
+	height: 35vmin;
+	bottom: -1vmin;
+}
+
+.dummy.left {
+	left: 2vmin;
+}
+
+.dummy.right {
+	right: 2vmin;
+}
+
+.dummy > * {
+	position: absolute;
+}
+
+.body-part {
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	object-fit: contain;
+	opacity: 0.5;
+	mask-size: contain;
+	mask-mode: luminance;
+	-webkit-mask-size: contain;
+}

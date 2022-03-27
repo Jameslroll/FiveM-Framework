@@ -1,0 +1,4 @@
+--[[ Events ]]--
+-- AddEventHandler(EventName.."start", function()
+-- 	Main:Init()
+-- end)

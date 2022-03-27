@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body id="main" style="display: none">
+		<div class="background">
+			<img src="assets/radio.png" />
+			<div id="volume">
+				<div id="labels">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="options">
+					<button onclick="setVolume(-1)"></button>
+					<button onclick="setVolume(1)"></button>
+				</div>
+			</div>
+			<div id="screen">
+				<span id="channel"></span>
+				<span id="frequency"></span>
+			</div>
+			<div id="keypad">
+				<button onclick="setChannel(1)"></button>
+				<button onclick="setChannel(2)"></button>
+				<button onclick="setChannel(3)"></button>
+				<button id="clear"></button>
+				
+				<button onclick="setChannel(4)"></button>
+				<button onclick="setChannel(5)"></button>
+				<button onclick="setChannel(6)"></button>
+				<button id="set-frequency"></button>
+				
+				<button onclick="setChannel(7)"></button>
+				<button onclick="setChannel(8)"></button>
+				<button onclick="setChannel(9)"></button>
+				<button onclick="setAdditional(1)"></button>
+
+				<button></button>
+				<button></button>
+				<button></button>
+				<button onclick="setAdditional(-1)"></button>
+			</div>
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>

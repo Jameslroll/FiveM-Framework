@@ -1,0 +1,12 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "main": "node/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fivem-js": "^1.5.2",
+    "socket.io": "^4.4.1",
+    "ws": "^8.4.2"
+  }
+}

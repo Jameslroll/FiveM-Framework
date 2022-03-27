@@ -1,0 +1,210 @@
+@font-face {
+	font-family: led;
+	src: url("fonts/minisystem.ttf");
+}
+
+body {
+	--aspect: calc(2000 / 600);
+	
+	/* --mask-color: rgba(0, 0, 255, 0.6);
+	--button-color: rgba(255, 255, 0, 0.6); */
+
+	--mask-color: transparent;
+	--button-color: transparent;
+
+	background: transparent;
+	overflow: hidden;
+	user-select: none;
+}
+
+img {
+	position: absolute;
+	width: auto;
+	height: 100%;
+	pointer-events: none;
+	object-fit: contain;
+}
+
+button {
+	background: var(--button-color);
+	outline: none;
+	border: none;
+}
+
+*:focus {
+	outline: none;
+	border: none;
+}
+
+.background {
+	position: absolute;
+
+	width: calc(100vmin / var(--aspect));
+	height: 100vmin;
+
+	bottom: -20vmin;
+	right: 10vmin;
+}
+
+/* Screen */
+#screen {
+	display: flex;
+	position: absolute;
+
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	font-family: led;
+	font-size: 2.8vmin;
+	color: rgb(50, 50, 50);
+
+	background: var(--mask-color);
+	border-radius: 1vmin;
+
+	top: 40%;
+	left: 19.5%;
+	width: 64%;
+	height: 5.6%;
+
+	overflow: hidden;
+}
+
+#screen #channel {
+	text-align: center;
+	flex-grow: 1;
+	max-width: 35%;
+}
+
+#screen #frequency {
+	flex-grow: 1;
+	max-width: 65%;
+	text-align: left;
+	overflow: hidden;
+}
+
+#screen #frequency.unset {
+	color: rgb(255, 0, 0);
+}
+
+/* Volume */
+#volume {
+	position: absolute;
+	display: block;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5vmin;
+	color: rgb(50, 50, 50);
+
+	background: var(--mask-color);
+
+	top: 7.5%;
+	left: 46%;
+	width: 22%;
+	height: 7%;
+
+	padding-top: 0px;
+}
+
+#volume #labels {
+	position: absolute;
+	display: block;
+
+	display: flex;
+	position: absolute;
+
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
+	left: 5%;
+	top: 45%;
+	width: 90%;
+	height: auto;
+
+	transform: translate(0%, -50%);
+}
+
+#volume #labels span {
+	color: rgb(240, 240, 240);
+	flex-grow: 1;
+	max-width: 33%;
+	font-weight: 800;
+	text-align: center;
+}
+
+#volume #labels span:first-child,
+#volume #labels span:last-child {
+	transform: scaleX(0.66);
+}
+
+#volume #labels span:first-child {
+	color: rgb(250, 250, 250);
+}
+
+#volume #labels span:last-child {
+	color: rgb(220, 220, 220);
+}
+
+#volume #labels span.off {
+	max-width: auto;
+	max-height: 33%;
+	margin-top: 10%;
+	font-size: 0.7em;
+	transform: rotate(-90deg);
+	padding-right: 6%;
+	padding-left: 3%;
+	border: 2px solid;
+}
+
+#volume #labels span.off:first-child {
+	transform: scaleX(0.66) rotate(-90deg);
+}
+
+#volume #options {
+	position: absolute;
+	display: block;
+
+	display: flex;
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+
+#volume #options button {
+	position: absolute;
+
+	width: 50%;
+	height: 100%;
+}
+
+#volume #options button:last-child {
+	right: 0px;
+}
+
+/* Keypad */
+#keypad {
+	display: flex;
+	position: absolute;
+
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+	background: var(--mask-color);
+
+	left: 25.5%;
+	top: 50.8%;
+	width: 56%;
+	height: 14%;
+}
+
+#keypad button {
+	width: 3.35vmin;
+	height: 2.5vmin;
+	margin-right: 5%;
+	margin-bottom: 6%;
+	border-radius: 1vmin;
+}

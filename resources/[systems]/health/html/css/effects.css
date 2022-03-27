@@ -1,0 +1,71 @@
+.effects {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	align-content: flex-start;
+	justify-content: flex-start;
+	right: 0%;
+	top: 0%;
+	bottom: 5%;
+	width: auto;
+	height: auto;
+}
+
+.effect {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 100%;
+	width: 4.5vmin;
+	height: 4.5vmin;
+	margin-top: 0.5vmin;
+	margin-left: 0.5vmin;
+	overflow: hidden;
+}
+
+.effect .fill {
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	width: auto;
+	height: auto;
+	background: rgba(50, 220, 50, 0.6);
+	opacity: 0.4;
+}
+
+.effects .icon {
+	--padding: 20%;
+
+	position: absolute;
+	object-fit: contain;
+	top: var(--padding);
+	left: var(--padding);
+	width: calc(100% - var(--padding) * 2);
+	height: calc(100% - var(--padding) * 2);
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+}
+
+.effect.grey {
+	background: linear-gradient(to top, rgba(60, 60, 60, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.effects .icon.white {
+	background: rgba(255, 255, 255, 1.0);
+}
+
+.effects .icon.red {
+	background: rgba(240, 40, 40, 1.0);
+}
+
+.effects .icon.gold {
+	background: linear-gradient(to top, rgb(255, 240, 50), rgb(255, 200, 0));
+}

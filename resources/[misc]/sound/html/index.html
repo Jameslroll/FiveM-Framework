@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			window.addEventListener("message", function(event) {
+				var data = event.data;
+				if (!data) return;
+				
+				var playSound = data.playSound;
+				if (playSound) {
+					sound = new Audio(`./sounds/${playSound.name}.ogg`);
+					sound.volume = playSound.volume ?? 1.0;
+					sound.play();
+				}
+			});
+		</script>
+	</head>
+</html>
